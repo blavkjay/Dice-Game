@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<title>Roll it</title>
+<link rel="stylesheet" href="css/style.css"/>
+
+<style type="text/css">
+.hide
+{
+	display: none;
+}
+</style>
+</head>
+<body>
+<section id= "home">
+<div id="roll">
+        ROLL IT!
+</div>
+<img src="images/d1.png" alt="diceimage" id="image">
+<input type="submit" name="start" value="Begin">
+</section>
+
+
+<section id="setup"  class="hide">
+<div class="header">
+  <h1>ROLL IT!</h1>
+</div>
+
+  <input type="text" name="name" placeholder="Enter Your Name" id="name" value="" >
+  <input type="text" name="no_of_dice" placeholder="No of dice" id="no_of_dice" value="" >
+  <div id ="errors"></div>
+  <input type="submit" value="start">
+
+
+</section>
+
+
+<section id="play" class="hide">
+	  <div class="header">
+    <h1>ROLL IT!</h1>
+</div>
+  <div class="gameDetails">
+    <div id="point">
+      Points
+    <div id="scores"> 0</div>
+    </div>
+    <div id="round">
+      Rounds
+        <div id="roundcount">0</div>
+    </div>
+
+
+</div>
+
+<div id="diceContainer">
+
+</div>
+
+<div id="dicePlay" class="hide">
+
+</div>
+
+<input type="submit" name="roll" value="roll Dices">
+<button class="hide">continue</button>
+<button class="hide">End Game</button>
+</section>
+
+<section id="scoreboard" class="hide">
+	    <div id= "average">
+      Average Score
+        <div id="averagescore"></div>
+    </div>
+    <button id="restart">Restart</button>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
